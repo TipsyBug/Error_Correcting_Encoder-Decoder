@@ -1,0 +1,7 @@
+.idea/
+*gradle*
+Topics
+*.yaml
+
+task/out/
+task/build/
