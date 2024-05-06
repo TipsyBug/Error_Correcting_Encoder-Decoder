@@ -18,9 +18,9 @@ This program requires Java to compile and run.
 ## Installation
 
 - Download this repository and unzip the .zip file in your desired location.
-- Using the command line, navigate to \Error Correcting Encoder-Decoder\task\src\correcter\
-- Compile the program using the command ```javac -d . Main.javajavac -d ../classes Main.java```.
-- Run the program using the command ```java -cp ../classes org.ikinsure.correcter.Main```.
+- Open a terminal, then enter ```cd "Error Correcting Encoder-Decoder/task/src"```.
+- Compile the program using the command ```javac correcter\Main.java```.
+- Run the program using the command ```java correcter.Main```.
 
 ## Example of use
 
@@ -35,10 +35,11 @@ MODES:
 
 The symbol > represents the user input. Notice that it's not the part of the input.
 
+```> java correcter.Main```
+
 Encode mode
 ```
-Write a mode: 
-> encode
+Write a mode: > encode
 
 send.txt:
 text view: Test
@@ -53,30 +54,29 @@ hex view: 4A 98 CC 4A 1E 86 1E 98
 
 Send mode
 ```
-Write a mode: 
-> send
+Write a mode: > send
 
 encoded.txt:
 hex view: 4A 98 CC 4A 1E 86 1E 98
 bin view: 01001010 10011000 11001100 01001010 00011110 10000110 00011110 10011000
 
 received.txt:
-bin view: 00001010 00011000 11001101 01001011 00011100 10010110 00011111 00011000
-hex view: 0A 18 CD 4B 1C 96 1F 18
+bin view: 01001000 10011100 11001000 01001000 00011111 10000010 00001110 10111000
+hex view: 48 9C C8 48 1F 82 0E B8
 ```
 
 Decode mode
 ```
-Write a mode: 
-> decode
+Write a mode: > decode
 
 received.txt:
-hex view: 0A 18 CD 4B 1C 96 1F 18
-bin view: 00001010 00011000 11001101 01001011 00011100 10010110 00011111 00011000
+hex view: 48 9C C8 48 1F 82 0E B8
+bin view: 01001000 10011100 11001000 01001000 00011111 10000010 00001110 10111000
 
 decoded.txt:
 correct: 01001010 10011000 11001100 01001010 00011110 10000110 00011110 10011000
 decode: 01010100 01100101 01110011 01110100
 hex view: 54 65 73 74
+
 text view: Test
 ```

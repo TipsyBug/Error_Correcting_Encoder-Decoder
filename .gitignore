@@ -2,6 +2,7 @@
 *gradle*
 Topics
 *.yaml
+*.class
 Error Correcting Encoder-Decoder/task/out
 Error Correcting Encoder-Decoder/task/build
 
